@@ -1,0 +1,11 @@
+fiftyonejob : 爬虫文件
+	文件说明：
+	spiders      爬虫目录，创建文件，编写爬虫规则，爬取51job网站数据
+	items.py    设置数据存储模板，用于结构化数据
+	settings.py 配置文件， redis配置、并发数，延迟下载等
+
+job_51 : Django文件
+
+51job.sql : 51job网站爬取的数据，有十万余条
+
+

@@ -1,0 +1,39 @@
+﻿51job  获取的数据：
+
+    首页：51job.com
+
+    职位搜索：list/.*
+
+    公司：all/.*
+
+    详情：51job.com/(.*)/\d+.html
+
+
+
+item:
+
+    详情url：      response.url
+    企业名称：enterprise_name    //p[@class="cname"]/a/text()
+
+    工作职位：pname  //*[@class="cn"]/h1/text()
+
+    工作薪资：smoney-emoney  //*[@class="cn"]/strong/text()
+
+    工作地点：plocation  //*[@class="cn"]/span/text()
+
+    工作地区：parea   //*[@class="bmsg inbox"]/p/text()
+
+    工作经验：experience //*[@class="t1"]//span[1]/text()
+    学历要求：position_education //*[@class="t1"]//span[2]/text()
+    招聘人数：pnumber    //*[@class="t1"]//span[3]/text()
+    发布时间：date_pub   //*[@class="t1"]//span[4]/text()
+    工作性质：ptype  无
+
+    标签：tags //*[@class="mt10"]/p[2]/span/text()[1:]
+
+    职位诱惑：advantage  //*[@class="t2"]/span/text()
+
+    职位描述：jobdesc    //*[@class="bmsg job_msg inbox"][1]/text()
+
+    公司简介：company_profile    //*[@class="tmsg inbox"]/text()
+
